@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body >
+    <main oninput="update() ">
+        <h1>Tip Calculator</h1>
+        <section>
+            <div class="bill">
+                <label for="yourBill">Bill</label> 
+                <div class="billInputCase">
+                    <p>R$</p>
+                    <input
+                    class="billInput"
+                    type="text"
+                    name="yourBill"
+                    id="yourBill"
+                    placeholder="Your Bill"
+                    />
+                </div>
+            </div>
+            <div>
+                <label class="space-between">Tip <span id="tipValue"></span></label>
+            </div>
+            <hr />
+            <div>
+                <label for="" class="space-between">Total <span id="billTotal">0</span></label>
+            </div>
+        </section>
+        <section>
+            <div>
+                <div>
+                    <label for="" class="space-between">Tip <span id="tipPercent">0%</span></label>
+                </div>
+                <input 
+                    type="range"
+                    value="0"
+                    class="range"
+                    id="tipInput"
+                />
+            </div>
+            <div>
+                <div class="">
+                    <label for="" class="space-between">Split <span id="splitValue">1 Person</span></label>
+                </div>
+                <input 
+                    type="range" 
+                    class="range"
+                    min="1"
+                    max="10"
+                    value="1"
+                    id="splitInput"
+                />
+            </div>
+            <hr>
+            <div>
+                <label class="space-between" for="">Bill Each <span id="each-bill">0</span></label>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
